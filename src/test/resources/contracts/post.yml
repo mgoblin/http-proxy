@@ -1,0 +1,11 @@
+description: >
+  Переадресация POST запроса на корневой URI
+name: Должен переадресовывать POST на корневой uri
+request:
+  method: POST
+  url: http://localhost:9090/
+response:
+  status: 200
+  headers:
+    Content-Type: "text/plain"
+  body: "Mock me"
