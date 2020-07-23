@@ -6,3 +6,7 @@ spring:
         uri: https://google.com
         predicates:
         - Method=GET,POST
+      uris: #Custom config block
+        upper: https://yandex.ru
+
+
