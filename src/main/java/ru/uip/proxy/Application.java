@@ -22,7 +22,7 @@ public class Application {
                         .path("/upper")
                         .filters(f -> f
                                 .rewritePath(".*", "/")
-                                .modifyResponseBody(String.class, String.class, Body::toUpperCase)
+                                .modifyResponseBody(String.class, String.class, BodyMapper::toUpperCase)
                         )
                         .uri("https://yandex.ru")
                 )
