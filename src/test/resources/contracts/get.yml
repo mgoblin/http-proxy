@@ -3,7 +3,7 @@ description: >
 name: Должен переадресовывать GET на корневой uri
 request:
   method: GET
-  url: http://localhost:9090/
+  url: http://localhost:8080/
 response:
   status: 200
   headers:
