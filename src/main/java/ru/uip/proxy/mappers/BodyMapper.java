@@ -1,4 +1,4 @@
-package ru.uip.proxy;
+package ru.uip.proxy.mappers;
 
 import org.reactivestreams.Publisher;
 import org.springframework.web.server.ServerWebExchange;
