@@ -7,8 +7,8 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @SpringBootTest(
-        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-        properties = {"server.port=0"}
+        properties = {"spring.cloud.gateway.uris.upper=http://localhost:9090"},
+        webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT
 )
 @DirtiesContext
 @ExtendWith({SpringExtension.class})
