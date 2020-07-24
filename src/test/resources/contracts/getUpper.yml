@@ -1,0 +1,12 @@
+description: >
+  Переадресация GET upper_route запроса на корневой URI
+name: Должен переадресовывать GET upper_route на корневой uri
+request:
+  method: GET
+  url: http://localhost:8080/upper
+response:
+  status: 200
+  headers:
+    Content-Type: "text/plain"
+  body: "MOCK ME"
+
