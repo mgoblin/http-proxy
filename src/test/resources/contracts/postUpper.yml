@@ -1,0 +1,11 @@
+description: >
+  Переадресация POST запроса маршрута upper на корневой URI
+name: Попытка переадресовывать POST маршрута upper на корневой uri
+request:
+  method: POST
+  url: http://localhost:8080/upper
+response:
+  status: 404
+  headers:
+    Content-Type: "text/plain"
+  body: "MOCK ME"

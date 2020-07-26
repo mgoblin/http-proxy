@@ -1,13 +1,13 @@
 {
-  "request": {
-    "method": "GET",
-    "url": "/get"
-  },
-  "response": {
-    "status": 200,
-    "body": "{ \"prefix\": \"Mock me\", \"url\": \"get\"}",
-    "headers": {
-      "Content-Type": "application/json"
+    "request": {
+        "method": "GET",
+        "url": "/get"
+    },
+    "response": {
+        "status": 200,
+        "body": "{\"prefix\": \"Mock me\", \"url\": \"get\"}",
+        "headers": {
+            "Content-Type": "application/json"
+        }
     }
-  }
 }

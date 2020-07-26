@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/?p=v"
+  },
+  "response": {
+    "status": 404,
+    "body": "{ \"prefix\": \"Mock me\", \"url\": \"get\", \"param\":\"v\"}",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

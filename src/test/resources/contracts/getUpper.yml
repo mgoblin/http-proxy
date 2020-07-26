@@ -1,6 +1,6 @@
 description: >
-  Переадресация GET upper_route запроса на корневой URI
-name: Должен переадресовывать GET upper_route на корневой uri
+  Переадресация GET запроса маршрута upper  на корневой URI
+name: Должен переадресовывать GET маршрута upper на корневой uri
 request:
   method: GET
   url: http://localhost:8080/upper
@@ -9,4 +9,20 @@ response:
   headers:
     Content-Type: "text/plain"
   body: "MOCK ME"
+
+---
+description: >
+  Переадресация GET запроса маршрута upper c параметрами
+name: Попытка переадресовывать GET маршрута upper с параметрами
+request:
+  method: GET
+  url: http://localhost:8080/upper?p=v
+response:
+  status: 404
+  headers:
+    Content-Type: "application/json"
+  body:
+    PREFIX: "MOCK ME"
+    URL: "GET"
+    PARAM: "V"
 
