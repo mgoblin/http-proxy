@@ -16,7 +16,7 @@ description: >
 name: Должен переадресовывать GET на uri get
 request:
   method: GET
-  url: http://localhost:9090/get
+  url: http://localhost:8080/get
 response:
   status: 200
   headers:
@@ -31,7 +31,7 @@ description: >
 name: Должен переадресовывать GET на uri get с параметрами
 request:
   method: GET
-  url: http://localhost:9090/get?p=v
+  url: http://localhost:8080/get?p=v
 response:
   status: 200
   headers:

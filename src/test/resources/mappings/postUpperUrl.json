@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/upper"
+  },
+  "response": {
+    "status": 404,
+    "body": "MOCK ME",
+    "headers": {
+      "Content-Type": "text/plain"
+    }
+  }
+}

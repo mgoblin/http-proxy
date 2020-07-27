@@ -3,6 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
     id "org.springframework.cloud.contract" version "2.2.3.RELEASE"
+    id 'jacoco'
 }
 
 group 'ru.uip'
@@ -42,6 +43,20 @@ contracts {
     testMode = 'EXPLICIT'
     testFramework = 'JUNIT5'
     failOnNoContracts = false
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn test
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: 'ru/uip/poxy/Application.class')
+        }))
+    }
 }
 
 test {
